@@ -1,0 +1,21 @@
+using System.Text;
+using System.Threading.Tasks;
+using LibraryClass;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double a = 0, b = 0, c = 0;
+            Console.WriteLine("Введите стороны треугольника:");
+            Console.Write("A="); a = Convert.ToDouble(Console.ReadLine());
+            Console.Write("B="); b = Convert.ToDouble(Console.ReadLine());
+            Console.Write("C="); c = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Стороны треугольника: А= " + a + ", B= " + b + ", C= " + c + ".");
+            Console.WriteLine("S треугольника= " + LibraryClass.Class1.calc_treug(a, b, c)); 
+            Console.ReadLine();
+        }
+    }
+}
